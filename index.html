@@ -5,30 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styel.css">
-    <style>
-        .Checking{
-            display: flex;
-            gap: 100px;
-        }
-    </style>
 </head>
 <body>
-   
+    <h1 style="text-align: center;">My Fast Web  Application</h1>
+    <button id="en">English</button>
+    <button id="ch">Chainess</button>
 
-    <div class="Checking">
-        <div class="fast">
-            <textarea type="text" name="" id="textInput" placeholder="Enter text" cols="30" rows="10"> </textarea>
-            <button onclick="deleteSymbols()">Click Check</button>
+    <div class="Allwork">
+        <div class="InputBox" style="width: 50%;">
+            <h2><code>Your Text Here  </code></h2>
+            <div class="input_Btn">
+                <textarea name="" placeholder="Enter Your Text Here" id="textAreaStyle1" cols="30" rows="10"></textarea>
+                <div class="buttonArea">
+                    <button class="symbolRm fastHide">Remove Symbol & English</button><br>
+                    <button class="symbolBtn">Remove Symbol</button><br>
+                    <button class="numberBtn">Remove Number</button><br>
+                    <button class="numSymBtn">Remove Number & symbol</button><br>
+                    <button class="resetBtn1">Reset Text</button>
+                </div>
+            </div>
+    
+            <h2><code>You Are Line Brack? Click And Text Here</code></h2>
+            <div class="input_Btn">
+                <textarea name="" placeholder="Enter Your Text Here" id="textAreaStyle2" cols="30" rows="10"></textarea>
+                <div class="lineBrackBtn">
+                    <button class="brackLine ">Line Brack</button><br>
+                    <button class="resetBtn2">Reset Text</button>
+                </div>
+            </div>
         </div>
         
-        <div class="Second">
-            <textarea name="" id="inputValue" cols="30" rows="10"  type="text" placeholder="Enter text"></textarea>
-            <button id="btn">Click Here</button>
-        </div>
+       <div class="oneStep">
+        <h2 class="" ><code>Synigng Your Text</code></h2>
+        <p class="copyHeading" copyatt="Text Copy"></p>
+        <textarea name="" id="clickCopyText" cols="30" rows="10" placeholder="Your Text" alerext="Your Text Copy"></textarea>
+       </div>
     </div>
-    
+   
     <p id="output"></p>
-    
-    <script src="index.js"></script>
+
+    <script type="application/javascript" src="script.js"></script>
 </body>
 </html>
